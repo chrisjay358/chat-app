@@ -29,10 +29,10 @@ body {
   @media only screen and (max-width: 25em) {
     .ui {
       flex-direction: column;
-      transform: scale(0.9);
+      transform: scale(0.8);
       box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
       top: 5%;
-      left: 20%; } }
+      left: 16%; } }
   .ui__header {
     background: linear-gradient(to left, #e942ff, #8838ff);
     border-radius: 20px 20px 10px 10px;
@@ -182,6 +182,9 @@ main {
 .section-ui {
   flex: 1 0 50%;
   position: relative; }
+  @media only screen and (max-width: 25em) {
+    .section-ui {
+      min-height: 80vh; } }
   .section-ui:before {
     content: "";
     position: absolute;
