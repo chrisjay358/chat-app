@@ -1,0 +1,227 @@
+.ui {
+  width: 30rem;
+  border: 10px solid $color-White;
+  background: $color-Light-Grayish-Violet;
+  transform: scale(0.73);
+
+  border-radius: 30px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -5%;
+  left: 41%;
+
+  @media only screen and (max-width: 25em) {
+    flex-direction: column;
+    transform: scale(0.9);
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
+
+    top: 5%;
+    left: 20%;
+  }
+
+  &__header {
+    background: linear-gradient(
+      to left,
+      $color-Light-Magenta,
+      $color-Light-Violet
+    );
+    border-radius: 20px 20px 10px 10px;
+    padding: 2rem 1rem 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -5%;
+      left: 50%;
+      background: $color-White;
+      height: 13px;
+      width: 155px;
+      border-radius: 0 0 10px 10px;
+      transform: translateX(-50%);
+    }
+
+    &-icon {
+      color: $color-Pale-Violet;
+      font-size: 2.5rem;
+    }
+
+    &-avatar {
+      display: block;
+      width: 4rem;
+      border-radius: 100%;
+      border: 3px solid $color-Pale-Violet;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      &--primary {
+        color: $color-Light-Grayish-Violet;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      &--sub {
+        color: $color-Pale-Violet;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    }
+
+    &-dot {
+      height: 0.3rem;
+      width: 0.3rem;
+      display: block;
+      background: $color-Pale-Violet;
+      border-radius: 100%;
+      margin-left: auto;
+
+      position: relative;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        height: 0.3rem;
+        width: 0.3rem;
+        background: $color-Pale-Violet;
+        border-radius: 100%;
+      }
+
+      &:before {
+        top: -180%;
+      }
+
+      &:after {
+        top: 170%;
+        left: 0;
+      }
+    }
+  }
+
+  &__content {
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    .chat-box {
+      padding: 1rem;
+      max-width: 67%;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-radius: 10px;
+
+      &__img-box {
+        & > *:not(:last-child) {
+          margin-right: 0.5rem;
+          margin-top: 1rem;
+        }
+
+        img {
+          width: 5rem;
+          border-radius: 10px;
+        }
+      }
+
+      &--left {
+        background: hsla(206, 7%, 79%, 0.521);
+        color: $color-Moderate-Violet;
+      }
+
+      &--right {
+        color: $color-Desaturated-Dark-Violet;
+        align-self: flex-end;
+      }
+
+      &__text {
+        background: $color-White;
+      }
+
+      &--gradient {
+        background: linear-gradient(
+          to right,
+          $color-Light-Magenta,
+          $color-Light-Violet
+        );
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $color-Pale-Violet;
+        min-width: 80%;
+
+        .radio-outline {
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 100%;
+          border: 2px solid $color-Very-Light;
+        }
+
+        .price {
+          margin-left: auto;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: $color-White;
+        }
+      }
+    }
+
+    .input-group {
+      width: 100%;
+      background: $color-White;
+      border-radius: 30px;
+      display: flex;
+      padding: 0.5rem;
+      margin-top: 1rem;
+
+      input {
+        border: none;
+        flex: 1;
+
+        &::placeholder {
+          color: $color-Grayish-Blue;
+        }
+      }
+
+      div {
+        background: $color-Very-Dark;
+        color: $color-White;
+        border-radius: 100%;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.section-text {
+  line-height: 1.6;
+  &__heading {
+    color: $color-Very-Dark-Desaturated-Violet;
+    font-weight: 700;
+  }
+
+  &__paragraph {
+    width: 62%;
+    font-size: 1.5rem;
+    color: $color-Dark-Grayish-Violet;
+
+    @media only screen and (max-width: 25em) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// Text
+
+$color-Pale-Violet: hsl(276, 100%, 81%);
+$color-Moderate-Violet: hsl(276, 55%, 52%);
+$color-Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+$color-Grayish-Blue: hsl(206, 6%, 79%);
+$color-Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+$color-Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+// Gradients
+
+$color-Light-Magenta: hsl(293, 100%, 63%);
+$color-Light-Violet: hsl(264, 100%, 61%);
+
+// Secondary
+
+$color-White: hsl(0, 0%, 100%);
+$color-Light-Grayish-Violet: hsl(270, 20%, 96%);
+$color-Very-Dark: hsl(271, 36%, 24%);
+$color-Very-Light: hsl(289, 100%, 72%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem  10px, 10px/16px =62.5%
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: $color-Light-Grayish-Violet;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
