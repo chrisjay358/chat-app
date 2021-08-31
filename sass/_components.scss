@@ -10,7 +10,7 @@
   top: -5%;
   left: 41%;
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 29em) {
     flex-direction: column;
     transform: scale(0.8);
     box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
@@ -220,7 +220,7 @@
     font-size: 1.5rem;
     color: $color-Dark-Grayish-Violet;
 
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 29em) {
       width: 100%;
     }
   }
